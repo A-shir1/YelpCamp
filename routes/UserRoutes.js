@@ -4,6 +4,7 @@ const passport = require('passport');
 const { storeReturnTo } = require('../middleware');
 const UserCtrl = require('../controllers/UserCtrl');
 
+
 const router = express.Router();
 
 router.route('/register')

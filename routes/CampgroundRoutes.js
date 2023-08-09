@@ -5,6 +5,7 @@ const CampgroundCtrl = require('../controllers/CampgroundCtrl');
 const multer = require('multer');
 const { storage } = require('../cloudinary');
 const upload = multer({ storage });    
+// const { check, validationResult } = require("express-validator");
 
 const router = express.Router();
 
@@ -25,4 +26,4 @@ router.get('/:id/edit', isLoggedIn, isCampAuthor, wrapAsync(CampgroundCtrl.rende
 
 
 
-module.exports = router
+module.exports = router;
